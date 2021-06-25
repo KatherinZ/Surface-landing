@@ -1,0 +1,19 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "Raleway Med";
+  font-weight: auto;
+  src: url(font/RalewayMedium.ttf)
+  format('truetype');
+}
+@font-face {
+  font-family: "Raleway Dem";
+  font-weight: auto;
+  src: url(font/RalewayDemibold.ttf)
+  format('truetype');
+}
+
+.fixed-frame{
+  position: fixed;
+  z-index: 100;
+}
