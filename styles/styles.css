@@ -18,25 +18,33 @@ body{
 }
 
 h1{
-  font-size: 84px;
-   margin-left: 50px;
+  font-size: 96px;
+  font-weight: 600;
+  margin-left: 50px;
 }
 h3{
-  font-weight: 500;
-  font-size: 48px;
+  font-weight: 600;
+  font-size: 64px;
   margin-left: 50px;
+  line-height: 100%;
+}
+h4{
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 50px;
+  line-height: 125%;
 }
 a{
   text-decoration: none;
 }
 
 p{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   max-width: 340px;
   margin-left: 50px;
-  margin-top: 26px;
-  line-height: 120%;
+  margin-top: 32px;
+  line-height: 130%;
 }
 button{
   font-family: "Raleway", helvetica, sans-serif;
@@ -57,8 +65,9 @@ button:hover{
 }
 
 .go--button{
-  margin-top: 20vw;
+  margin-top: 2vw;
 }
+
 .letter-padding{
   color: var(--color-white);
   font-size: 48px;
@@ -68,7 +77,7 @@ button:hover{
   font-size: 96px;
 }
 .letter-padding--cover{
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: 96px;
 }
 
@@ -76,16 +85,22 @@ button:hover{
 .section-cover{
   display: flex;
   justify-content: space-between;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 .section-cover--left img{
   margin: 50px 0 0 50px;
   width: 90px;
 }
 .section-cover--right img{
-  height: 55vw;
+  height: 54vw;
 }
-.section-cover .go--button{
-  margin-top: 10vw;
+.section-cover button{
+  color: var(--color-black);
+  background-color: var(--color-green);
+}
+.section-cover .head-title{
+  margin-top: 80px;
 }
 
 .section-search{
@@ -102,17 +117,17 @@ button:hover{
   border-radius: 400px;
 }
 .section-search--center{
-  padding: 25vw 0 0 0;
+  padding: 23vw 0 0 0;
 }
 .pseudo-search{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: var(--color-white);
   border-radius: 80px;
   width: 94vw;
   align-items: center;
-  padding: 2vw 50px 2vw 0;
+  padding: 3vw 0 3vw 3vw;
   margin: 0 auto;
 
 }
@@ -134,28 +149,37 @@ button:hover{
 .section-schools {
   display: flex;
   flex-direction: row;
-  padding-top: 10vw;
+  justify-content: space-between;
 }
-.section-schools .surftypes{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.section-schools--right{
+  background-color: var(--color-green);
 }
-.surftypes--right, .surftypes--left{
-  margin-top: -14vw;
+.section-schools--left{
+  margin-top: 152px;
 }
-.surftypes--right{
-  padding-left: 15px;
-}
+
 .surftypes--left{
-  padding-right: 15px;
+  display: flex;
+  margin: 60px 50px;
+  position: absolute;
+  z-index: -2;
+}
+.surftypes--left img{
+  padding-right: 10px;
+  height: 5vw;
 }
 .section-schools--right .iphone-schools{
-  width: 30vw;
+  width: 20vw;
+  padding: 186px 170px 0 170px;
+  margin: 0;
 }
-.surftypes--left{
-  display: flex;
+.section-schools h3{
+  width: 50vw;
 }
+.section-schools .go--button{
+  margin-top: 16vw;
+}
+
 
 
 
@@ -236,20 +260,16 @@ button:hover{
   display: flex;
   flex-direction: row;
 }
-.section-media h3{
-  width: 65vw;
+.section-media h4{
+  width: 50vw;
+  margin-top: 240px;
 }
-.section-media span{
-  width: 65vw;
-}
-.section-media--left{
-  padding-top: 6vw;
-}
+
 .section-media--right{
   display: flex;
   align-items: center;
   z-index: -1;
-  margin-left: 140px;
+  margin-left: 30px;
 }
 .section-media--right img{
   width: 12vw;
@@ -259,14 +279,20 @@ button:hover{
   margin-top: -10vw;
 }
 .section-media--right img:nth-of-type(2){
-  margin-top: 5vw;
+  margin-top: 10vw;
   margin-left: 30px;
 }
+
+ .section-media .go--button{
+  margin-top: 4vw;
+}
+
 
 .section-final{
   background-color: #E8E8E8;
   padding: 50px 50px 20px 50px;
   border-radius: 32px 32px 0 0;
+  margin-top: 2vw;
 }
 
 
@@ -274,20 +300,16 @@ button:hover{
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
-  background-position: center;
-  height: 50vw;
-  width: 93vw;
+  /* background-position: center; */
+  /* height: 50vw; */
+  /* width: 93vw; */
   border-radius: 32px;
   z-index: 10;
-}
-.section-final--video-overlay .infoblock-item--top{
-  padding: 3vw;
+  padding: 24vw 21.1vw;
+
 }
 .section-final--video-overlay a{
-  margin-left: 24vw;
-  margin-top: 15vw;
-  align-items: center;
-  background-position: center;
+  padding: 24vw;
 }
 .videocover{
   background-color: var(--color-black);
@@ -335,12 +357,20 @@ button:hover{
   color: var(--color-black);
   margin-top: 10vw;
 }
+.info--button--large{
+  background-color
+}
 
 
 footer{
   display: flex;
   justify-content: space-between;
   margin-top: 28px;
+  align-items: center;
+}
+.media-link:hover{
+  mix-blend-mode: difference;
+  cursor: pointer;
 }
 footer button{
   background-color: var(--color-black);

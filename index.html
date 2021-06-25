@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="FCXEAlTd7K0n9MNZwc1dCqjjRdOpPuZuObWdy5H7QYi58mbOsWiL4yItH8KwEgY7OMmf0EmTQWmgwtMy/Y+H5w==" />
+    <link rel="shortcut icon" type="image/svg" href="images/logo-sign-w.svg">
     <link rel="stylesheet" media="all" href="styles/styles.css" data-turbolinks-track="reload" />
     <!-- <script src="packs/js/application-9afcbb5693aa87623e69.js" data-turbolinks-track="reload"></script> -->
     <!-- <script src="http://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script> -->
@@ -17,14 +18,13 @@
  <div class="landing-wrapper">
 
 <section class="section-cover" id="cover">
-  <img src="./images/fixed-frame.svg" class="fixed-frame">
+  <!-- <img src="./images/fixed-frame.svg" class="fixed-frame"> -->
   <div class="section-cover--left">
-    <img src="images/logotype-black.svg" alt="">
+    <img src="images/logotype-white.svg" alt="">
     <div class="head-title">
       <h1>стань true</h1>
-      <h1><span class="letter-padding--cover">––</span>серфером</h1>
-      <h1><span class="letter-padding--cover">––––</span>в&nbsp;реалиях</h1>
-      <h1>города</h1>
+      <h1><span class="letter-padding--large">––</span>серфером</h1>
+      <h1>в&nbsp;реалиях города</h1>
     </div>
 
     <p>Surface – твой проводник по&nbsp;серф-школам России и&nbsp;миру серфинга</p>
@@ -32,7 +32,7 @@
     <button class="go--button">Перейти</button>
   </div>
   <div class="section-cover--right">
-    <img src="./images/section-cover.png" alt="">
+    <img src="./images/cover.png" alt="">
   </div>
 </section>
 
@@ -40,9 +40,8 @@
   <div class="section-search--rounded">
     <div class="section-search--center">
       <div class="pseudo-search">
-
-        <h3>Стоп, что? Серфинг в&nbsp;России?</h3>
         <img src="./images/search.svg" alt="">
+        <h3>Стоп, что? Серфинг в&nbsp;России?</h3>
       </div>
     </div>
 
@@ -55,28 +54,21 @@
 <section class="section-schools">
   <div class="section-schools--left">
     <div class="head-title">
-      <h3>Мы уже нашли для тебя</h3>
-      <h3><span class="letter-padding">––</span>идеальную серф-школу</h3>
+      <h3>Мы уже нашли для</h3>
+      <h3>тебя идеальную</h3>
+      <h3>серф-школу</h3>
     </div>
 
-    <p>Все школы отфильтрованы по&nbsp;городам
-ивидам серфинга, так что вы&nbsp;точно
-не&nbsp;заблудитесь</p>
+    <div class="surftypes--left">
+      <img src="./images/classic.svg" alt="">
+      <img src="./images/kite.svg" alt="">
+      <img src="./images/wave.svg" alt="">
+    </div>
 
-    <button class="go--button">Больше школ</button>
+    <button class="go--button">Перейти к школам</button>
   </div>
   <div class="section-schools--right">
-    <div class="surftypes">
-      <div class="surftypes--left">
-        <img src="./images/classic.svg" alt="">
-        <img src="./images/sup.svg" alt="">
-        <img src="./images/wake.svg" alt="">
-      </div>
       <img src="./images/mobile-schools.png" alt="mobile-schools" class="iphone-schools">
-      <div class="surftypes--right">
-        <img src="./images/kite.svg" alt="">
-      </div>
-    </div>
   </div>
 </section>
 
@@ -86,11 +78,10 @@
   <section class="section-city" id="city">
     <div class="head-title">
       <h1>12 направлений</h1>
-      <h1><span class="letter-padding--large">––</span>на&nbsp;любой вкус</h1>
     </div>
-  <div class="city__lines">
+  <!-- <div class="city__lines">
     <div class="city__lines__item">
-      <span class="city__lines__item__fill">Владивосток</span>
+      <span class="city__lines__item__outline">Владивосток</span>
       <span class="city__lines__item__fill">Москва</span>
       <span class="city__lines__item__fill">Петербург</span>
       <span class="city__lines__item__outline">Крым</span>
@@ -98,27 +89,38 @@
     <div class="city__lines__item">
       <span class="city__lines__item__outline">Камчатка</span>
       <span class="city__lines__item__fill">Мурманск</span>
-      <span class="city__lines__item__fill">Анапа</span>
+      <span class="city__lines__item__outline">Анапа</span>
       <span class="city__lines__item__fill">Калининград</span>
     </div>
     <div class="city__lines__item">
-      <span class="city__lines__item__outline">Сахалин</span>
+      <span class="city__lines__item__fill">Сахалин</span>
       <span class="city__lines__item__fill">Курилы</span>
-      <span class="city__lines__item__fill">Хабаровск</span>
+      <span class="city__lines__item__outline">Хабаровск</span>
       <span class="city__lines__item__fill">Сочи</span>
     </div>
+  </div> -->
+
+  <div class="city__lines">
+    <span class="city__lines__item"><span class="city__lines__item__blue">Камчатка,</span> Владивосток, Курильские острова, Камчатка, <span class="city__lines__item__green">Владивосток,</span> Курильские острова, <span class="city__lines__item__blue">Камчатка,</span> Владивосток, Курильские острова, <span class="city__lines__item__green">Камчатка,</span> Владивосток</span>
+  </div>
+  <div class="city__lines">
+    <span class="city__lines__item">Сахалин, <span class="city__lines__item__green">М<span class="letter">о</span>сква,</span> Санкт-П<span class="letter">е</span>тербург, Липецкая <span class="letter">о</span>бласть, <span class="city__lines__item__blue">Сахалин,</span> Москв<span class="letter">а</span>, Санкт-Петербург, Лип<span class="letter">е</span>цкая область,Сахалин, <span class="city__lines__item__blue">М<span class="letter">о</span>сква,</span> Санкт-П<span class="letter">е</span>тербург, Липецкая <span class="letter">о</span>бласть</span>
+  </div>
+  <div class="city__lines">
+    <span class="city__lines__item">Мурманск, Д<span class="letter">а</span>гестан, <span class="city__lines__item__blue">Магаданская обл<span class="letter">а</span>сть,</span>  Мурманск, Дагест<span class="letter">а</span>н, Магаданская <span class="letter">о</span>бласть, <span class="city__lines__item__green">Мурманск,</span> Дагестан, Маг<span class="letter">а</span>данская область, Мурманск, Д<span class="letter">а</span>гестан</span>
+  </div>
+  <div class="city__lines">
+    <span class="city__lines__item">
+      Ка</span>лининград, Крым, Сочи, <span class="city__lines__item__blue">Анапа,</span> Калининград, Крым, Сочи, <span class="city__lines__item__green">Анапа,</span> Калининград, Крым, Сочи, Анапа, Анапа, Калининград, Крым, Сочи, <span class="city__lines__item__green">Анапа,</span> С<span class="letter">о</span>чи, Калининград
+    </span>
   </div>
   </section>
   <section class="section-media">
     <div class="section-media--left">
       <div class="head-title">
-        <h3>Вдохновись и&nbsp;почувствуй вайб,</h3>
-        <h3><span class="letter-padding">––</span>подготовься к&nbsp;тренировкам</h3>
-        <h3><span class="letter-padding">––––</span>и&nbsp;сделай шаг к&nbsp;серф-мечте</h3>
-        <h3>вместе с&nbsp;комьюнити Surface</h3>
+        <h4>Вдохновись и&nbsp;почувствуй вайб, подготовься к&nbsp;тренировкам и&nbsp;сделай шаг к&nbsp;серф-мечте вместе&nbsp;с&nbsp;комьюнити Surface</h4>
       </div>
-      <p>Surface — пространство разных мнений, свободных от&nbsp;критики-политики. Поэтому тут о&nbsp;серфинге честно и&nbsp;по&nbsp;делу</p>
-      <button class="go--button">Читать на Surface</button>
+      <button class="go--button">Перейти к медиа</button>
     </div>
     <div class="section-media--right">
       <img src="images/reel-left.png" alt="reel-left">
@@ -130,10 +132,6 @@
 
   <div class="section-final--video">
     <div class="section-final--video-overlay">
-      <div class="infoblock-item--top">
-        <div class="circle"></div>
-        <h5>Surface promo</h5>
-      </div>
       <a href = "https://www.youtube.com/embed/jstKieCu2Os" target="_blank" rel="noreferrer"><img src="images/playbtn.svg" alt=""></a>
     </div>
     <div class="videocover">
@@ -175,9 +173,24 @@
     </div>
     <footer>
       <button class="info--button"><a href="#cover">наверх</a></button>
+
+      <a class="media-link">
+        <img src="images/insta.svg" alt="">
+      </a>
+      <a class="media-link">
+        <img src="images/fb.svg" alt="">
+      </a>
+      <a class="media-link">
+        <img src="images/yt.svg" alt="">
+      </a>
+      <a class="media-link">
+        <img src="images/tg.svg" alt="">
+      </a>
+
       <a class="info--button">
         <img src="images/logotype-black.svg" alt="">
       </a>
+
 
     </footer>
   </section>
