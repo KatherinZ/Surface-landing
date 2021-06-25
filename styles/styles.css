@@ -256,6 +256,77 @@ button:hover{
 }
 
 
+
+
+
+.city__lines {
+  width: 400%;
+  animation: left 140s linear infinite;
+  animation-direction: alternate;
+}
+.city__lines span{
+  color: var(--color-white);
+  font-size: 48px;
+
+}
+.city__lines__item__blue, .city__lines__item__green{
+  font-size: 64px;
+}
+
+/* line 567, app/assets/stylesheets/landing.scss */
+.city__lines:nth-of-type(2) {
+  animation: right 140s linear infinite;
+}
+
+/* line 570, app/assets/stylesheets/landing.scss */
+.city__lines:nth-of-type(4) {
+  animation: right 140s linear infinite;
+}
+
+/* line 575, app/assets/stylesheets/landing.scss */
+.city__lines__item {
+  font-weight: 500;
+  font-size: 72px;
+}
+
+/* line 580, app/assets/stylesheets/landing.scss */
+.city__lines__item .city__lines__item__blue {
+  color: #2763BD;
+}
+
+/* line 583, app/assets/stylesheets/landing.scss */
+.city__lines__item .city__lines__item__green {
+  color: #A9D726;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(-65%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-65%);
+  }
+}
+
+
+
+
+
 .section-media{
   display: flex;
   flex-direction: row;
