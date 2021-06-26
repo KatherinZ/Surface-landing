@@ -270,7 +270,8 @@ button:hover{
 
 }
 .city__lines__item__blue, .city__lines__item__green{
-  font-size: 64px;
+  font-size: 48px;
+  padding-bottom: 30px;
 }
 
 /* line 567, app/assets/stylesheets/landing.scss */
@@ -329,7 +330,7 @@ button:hover{
 
 .section-media{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 .section-media h4{
   width: 50vw;
@@ -340,7 +341,7 @@ button:hover{
   display: flex;
   align-items: center;
   z-index: -1;
-  margin-left: 30px;
+  margin-left: 120px;
 }
 .section-media--right img{
   width: 12vw;
